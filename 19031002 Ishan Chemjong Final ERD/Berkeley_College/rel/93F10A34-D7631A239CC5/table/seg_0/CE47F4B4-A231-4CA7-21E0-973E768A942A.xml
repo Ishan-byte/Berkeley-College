@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE47F4B4-A231-4CA7-21E0-973E768A942A" name="Student_Attendence_info">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:35:59 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Student_ID" id="6506460A-6DED-8862-CE38-B7B5717376C0">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:36:33 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="661DB49B-CE01-A459-3686-D245B6C6A480" referredColumn="839A6034-5F6F-77BE-A4C8-B2BA063F5EEF"/>
+</associations>
+</Column>
+<Column name="Module_ID" id="746DAB86-B7D2-5BC6-7A26-AA6CC253821E">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:36:50 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7108484-30FD-E0EB-6441-1DF391471280" referredColumn="986C0D24-0086-CBDE-A9C1-1A5281CA0898"/>
+</associations>
+</Column>
+<Column name="Attendance_Date" id="0F80B9B2-5778-F888-5845-D210B5A429EA">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:37:06 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_ID" id="A400FD36-8210-FC4E-B932-14336EDCF8C1">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:09:43 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19ED3731-4222-460F-5386-EDEA7D2A16E9" referredColumn="54FF4D72-54E3-1396-B35C-8DA7A73EF9DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C676265-D6E1-2AF5-C716-02FAAD74243B" name="Student_Attendence_info_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 03:51:57 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6506460A-6DED-8862-CE38-B7B5717376C0"/>
+<colUsage columnID="746DAB86-B7D2-5BC6-7A26-AA6CC253821E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C22B86F0-10D5-431F-73B1-1BB64CFED58C" name="Attendence_Module_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:37:26 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="746DAB86-B7D2-5BC6-7A26-AA6CC253821E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD111156-7B83-0283-DA0C-8ECD1B4F8F54" name="Attendence_Departments_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:09:53 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A400FD36-8210-FC4E-B932-14336EDCF8C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E44D8CBA-A8E4-10FD-FCBD-FDE7459B2E8C" name="Attendence_Student_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 12:41:39 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6506460A-6DED-8862-CE38-B7B5717376C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

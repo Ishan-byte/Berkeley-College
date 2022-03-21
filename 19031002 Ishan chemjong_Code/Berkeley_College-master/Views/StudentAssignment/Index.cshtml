@@ -1,0 +1,64 @@
+@model berkeley_college.Models.ResultInfo
+
+@{
+    ViewData["Title"] = "Student Assignment Details";
+    var results=(IEnumerable<ResultInfo>) ViewBag.results;
+}
+
+<h1>Student Assignment Details</h1>
+<br  />
+
+<div class="form-group">
+    <form asp-action="Details">
+        <label asp-for="StudentId" class="control-label">Select a Student ID</label>
+        <select asp-for="StudentId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.StudentId"></select>
+    </form>
+</div>
+<br />
+<div>
+    <h2>Assignment Details of Student id: <a asp-action="Details" asp-controller="Students" asp-route-id="@ViewBag.Student.PersonId">@ViewBag.Student.PersonId</a>  </h2>
+</div>
+
+<script type="text/javascript">
+ function OnChangeEvent(dropDownElement){
+  var selectedValue = dropDownElement.options[dropDownElement.selectedIndex].value;
+  document.location = "/StudentAssignment/Index/" + selectedValue;
+ }
+</script>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AssignmentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in results) {
+        <tr>
+            <td>
+                <a asp-controller="Assignments" asp-action="Details" asp-route-id="@item.AssignmentId"> @Html.DisplayFor(modelItem => item.AssignmentId)</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+
+            <td> 
+                <a asp-controller="ResultInfoes" asp-action="Edit" asp-route-id="@item.ResultId">Edit</a> |
+                <a asp-controller="ResultInfoes" asp-action="Details" asp-route-id="@item.ResultId">Details</a> |
+                <a asp-controller="ResultInfoes" asp-action="Delete" asp-route-id="@item.ResultId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

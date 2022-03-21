@@ -1,0 +1,73 @@
+@model berkeley_college.Models.StudentFeePayment
+
+@{
+    ViewData["Title"] = "Student Payment Details";
+    var Payments =(IEnumerable<StudentFeePayment>) ViewBag.Payments;
+}
+
+<h1>Student Fee Payment Details</h1>
+<br />
+
+<div class="form-group">
+    <form asp-action="Details">
+        <label asp-for="StudentId" class="control-label">Select a Student ID</label>
+        <select asp-for="StudentId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.StudentId"></select>
+    </form>
+</div>
+<br />
+<div>
+    <h2>Fee Payment Details of Student id: <a asp-action="Details" asp-controller="Students" asp-route-id="@ViewBag.Student.PersonId">@ViewBag.Student.PersonId</a>  </h2>
+</div>
+<script type="text/javascript">
+ function OnChangeEvent(dropDownElement){
+  var selectedValue = dropDownElement.options[dropDownElement.selectedIndex].value;
+  document.location = "/StudentPayment/Index/" + selectedValue;
+ }
+</script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Department)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Payments) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartmentId)
+            </td>
+              <td>
+                <a asp-controller="StudentFeePayments" asp-action="Edit" asp-route-id="@item.PaymentId">Edit</a> |
+                <a asp-controller="StudentFeePayments" asp-action="Details" asp-route-id="@item.PaymentId">Details</a> |
+                <a asp-controller="StudentFeePayments" asp-action="Delete" asp-route-id="@item.PaymentId">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

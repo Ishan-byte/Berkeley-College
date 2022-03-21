@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B20ACD88-1307-2E84-3F21-8F0418D5FACB" name="Address">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:46:10 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Address_ID" id="25A401A0-5DFD-0169-E1E8-0095E8A74CC6">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:47:10 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Country" id="A21F7E83-8BCB-E42A-3952-F5F69A879CA1">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:47:30 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="City" id="E2A1E25C-5F60-7680-07D1-51F96E6E8FAF">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:47:52 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Postal_Code" id="00110DC3-9D6E-45AA-5962-AE1DC3A5FC55">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:49:02 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB90EF35-BE1F-B33E-EEB3-46935C4E864C" name="Address_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:47:10 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25A401A0-5DFD-0169-E1E8-0095E8A74CC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

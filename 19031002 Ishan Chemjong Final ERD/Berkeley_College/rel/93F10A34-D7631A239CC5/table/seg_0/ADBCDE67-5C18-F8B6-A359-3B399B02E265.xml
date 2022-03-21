@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADBCDE67-5C18-F8B6-A359-3B399B02E265" name="Teacher">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:30:00 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Teacher_Type" id="1F3E5590-3585-9389-3DF5-A15B7DD34849">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:30:43 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salary" id="91E678B3-F63A-0602-76B1-E407D9476E39">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:30:58 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_ID" id="259F67E3-E276-8B43-E4EF-C455C8FA1B8A">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:31:17 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0714B3BE-EBD5-6413-49A9-68F6F9A062A9" referredColumn="35DE724C-C6FD-5ABC-D281-5E90EA3B1465"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FA92FE1-8D6B-6EF7-FC78-624E9365D612" name="Teacher_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 12:41:04 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="259F67E3-E276-8B43-E4EF-C455C8FA1B8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E64CB834-3B62-9C64-8267-6A896208150E" name="Teacher_Person_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:31:28 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="259F67E3-E276-8B43-E4EF-C455C8FA1B8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

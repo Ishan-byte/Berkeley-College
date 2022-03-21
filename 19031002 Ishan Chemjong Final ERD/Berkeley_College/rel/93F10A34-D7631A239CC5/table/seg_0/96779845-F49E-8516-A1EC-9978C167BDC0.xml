@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96779845-F49E-8516-A1EC-9978C167BDC0" name="Student_Fee_Payment">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:07:30 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Payment_ID" id="DE0CB915-3E4E-7A0A-57ED-14F6B1810F3A">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:14:24 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Amount" id="360AA3D6-F40A-04CD-CDAC-57A021EB931D">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:14:45 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Year" id="902A642E-088A-3BAB-6EEB-BBA7016E1057">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:15:12 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Payment_Date" id="2326DF53-33DA-63E8-543D-A6E33974A1D5">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:15:28 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Student_ID" id="8D6F2368-EEEE-E9F6-CF77-93E74F390BFA">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:16:05 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F98A2C62-DD21-CD5B-20F7-06875C8D0CA8" referredColumn="839A6034-5F6F-77BE-A4C8-B2BA063F5EEF"/>
+</associations>
+</Column>
+<Column name="Department_ID" id="0A123462-9BAF-20FB-FF39-83B3737C2CCA">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:09:07 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="659EB683-1118-E3C4-6305-6F78F07545A2" referredColumn="54FF4D72-54E3-1396-B35C-8DA7A73EF9DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2B7B18F-32E5-2F68-B8F3-25BDEED56261" name="Student_Fee_Payment_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:14:24 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE0CB915-3E4E-7A0A-57ED-14F6B1810F3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B75F7711-72E9-4462-96F6-0436A99AFB68" name="Payment_Departments_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:09:20 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A123462-9BAF-20FB-FF39-83B3737C2CCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BBE1CBC-FF64-9C3B-5320-FC5140D056B4" name="Student_Fee_Payment_Student_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 12:40:46 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D6F2368-EEEE-E9F6-CF77-93E74F390BFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

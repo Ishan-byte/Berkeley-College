@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5612188A-AAF4-2E94-9CEF-3015D668094D" name="Assignment">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:44:15 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Assignment_ID" id="614BE498-29BE-F74B-CBCF-D0B8E62D2EC8">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:44:42 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Assignment_Type" id="DAFD5D08-6233-4BE5-63F7-FACFC2537F44">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:45:03 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_ID" id="BA74FBAA-3B6F-0208-DA38-945730B83930">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:08:13 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E579157C-1FA8-88A5-EE94-2CC79939F77F" referredColumn="54FF4D72-54E3-1396-B35C-8DA7A73EF9DE"/>
+</associations>
+</Column>
+<Column name="Module_ID" id="4B1F1C08-838D-F9FC-E654-A09B8AFD26AD">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:14:47 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76AA2978-69E1-07DC-CB85-42B73A1C17B3" referredColumn="986C0D24-0086-CBDE-A9C1-1A5281CA0898"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA5B4EB3-670B-F778-B2CD-5BBCA25CB7B5" name="Assignment_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:44:42 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="614BE498-29BE-F74B-CBCF-D0B8E62D2EC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53E6D569-E115-7776-4CBB-B2510BE0666D" name="Assignment_Departments_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:08:30 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA74FBAA-3B6F-0208-DA38-945730B83930"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55F9765A-1EF1-7171-BD75-6396F6882C7D" name="Assignment_Module_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:15:11 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B1F1C08-838D-F9FC-E654-A09B8AFD26AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

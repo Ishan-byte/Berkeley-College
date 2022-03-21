@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E40F784-63E5-A3CE-00A4-BECC0B998582" name="Person_Address_info">
+<createdBy>User</createdBy>
+<createdTime>2022-03-06 05:56:45 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_ID" id="DB1F5BEC-CE5E-C309-BFC4-F7BCC3A47A77">
+<createdBy>User</createdBy>
+<createdTime>2022-03-06 05:57:15 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D06B7991-F4FE-EEF2-58E2-1058F025188E" referredColumn="35DE724C-C6FD-5ABC-D281-5E90EA3B1465"/>
+</associations>
+</Column>
+<Column name="Address_ID" id="5C3F92E4-5D99-99A2-3EFD-9127359F8B29">
+<createdBy>User</createdBy>
+<createdTime>2022-03-06 05:57:26 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABC9F1CC-940C-5A7D-9017-46A414D592E1" referredColumn="25A401A0-5DFD-0169-E1E8-0095E8A74CC6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43D4F71C-F5A9-A274-A4F8-E0431EEA800F" name="Person_Address_info_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 04:01:07 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB1F5BEC-CE5E-C309-BFC4-F7BCC3A47A77"/>
+<colUsage columnID="5C3F92E4-5D99-99A2-3EFD-9127359F8B29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3D93FC9-4461-6722-1B59-95F0F80B9861" name="Person_Address_info_Person_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-06 05:57:40 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB1F5BEC-CE5E-C309-BFC4-F7BCC3A47A77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="895C8592-B2B0-4612-70A8-477373BC050D" name="Person_Address_info_Address_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-06 05:57:48 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C3F92E4-5D99-99A2-3EFD-9127359F8B29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

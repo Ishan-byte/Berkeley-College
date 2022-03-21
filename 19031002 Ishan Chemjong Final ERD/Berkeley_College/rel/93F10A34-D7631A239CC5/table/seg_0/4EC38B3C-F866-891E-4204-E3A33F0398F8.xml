@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4EC38B3C-F866-891E-4204-E3A33F0398F8" name="Student">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 17:58:23 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_ID" id="839A6034-5F6F-77BE-A4C8-B2BA063F5EEF">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:00:09 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="139CCF53-876D-5983-59F4-119028E923C7" referredColumn="35DE724C-C6FD-5ABC-D281-5E90EA3B1465"/>
+</associations>
+</Column>
+<Column name="Student_Year" id="4B07EE85-BC43-B7E1-63D6-D222544AA267">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:01:03 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E773AA53-5C39-DD2A-0635-8C326A99E9B8" name="Student_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-07 12:39:56 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="839A6034-5F6F-77BE-A4C8-B2BA063F5EEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23D783AD-ED5C-8195-D1CF-12CEFFF45FEE" name="Student_Person_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:01:58 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="839A6034-5F6F-77BE-A4C8-B2BA063F5EEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

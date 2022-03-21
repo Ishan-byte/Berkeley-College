@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="300AA0DA-6175-DE15-9F8B-BB9F42B2AD86" name="Module">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:22:22 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Module_ID" id="986C0D24-0086-CBDE-A9C1-1A5281CA0898">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:23:04 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Module_Code" id="2F5C3715-9D74-29C0-9BEF-BBC6198F7F14">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:23:23 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Module_Name" id="5D2D93AC-875E-643B-F3FC-D94A97D64A4F">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:24:12 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Module_Teaching_Days" id="F6E7262D-FB2E-F8ED-72F9-6FA80379AD24">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:24:41 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Module_Credit" id="1D1B5480-9885-77C7-FD77-B1A807DEF853">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:26:03 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37B84708-474F-8A77-154C-3B052E0F8586" name="Module_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-03-05 18:23:04 UTC</createdTime>
+<ownerDesignName>Berkeley_College</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="986C0D24-0086-CBDE-A9C1-1A5281CA0898"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
