@@ -29,6 +29,11 @@ namespace berkeley_college.Controllers
             ViewData["StudentId"] = new SelectList(_context.Student, "PersonId", "PersonId");
             ViewBag.student = (await _context.Student.FromSqlRaw($"select * from student where person_id= '{id}'").ToListAsync())[0];
             ViewBag.results = await _context.ResultInfo.FromSqlRaw($"select * from result_info where student_id='{id}'").ToListAsync();
+            foreach (var result in ViewBag.results)
+            {
+                result.Assignment = (await _context.Assignment.FromSqlRaw($"select * from assignment where assignment_id= '{result.AssignmentId}'").ToListAsync())[0];
+                result.Assignment.Module = (await _context.Module.FromSqlRaw($"select * from module where module_id= '{result.Assignment.ModuleId}'").ToListAsync())[0];
+            }
             return View();
         }
     }

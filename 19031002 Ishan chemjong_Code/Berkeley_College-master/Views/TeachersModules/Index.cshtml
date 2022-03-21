@@ -11,7 +11,7 @@
 <div class="form-group">
     <form asp-action="Details">
         <label asp-for="PersonId" class="control-label">Select a Teacher ID</label>
-        <select asp-for="PersonId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.TeacherId"></select>
+        <select asp-for="PersonId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.TeacherId"><option selected>@ViewBag.Teacher.PersonId</option></select>
     </form>
 </div>
 <br />

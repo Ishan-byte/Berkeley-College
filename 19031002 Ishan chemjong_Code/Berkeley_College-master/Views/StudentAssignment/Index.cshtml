@@ -11,7 +11,7 @@
 <div class="form-group">
     <form asp-action="Details">
         <label asp-for="StudentId" class="control-label">Select a Student ID</label>
-        <select asp-for="StudentId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.StudentId"></select>
+        <select asp-for="StudentId" onchange="OnChangeEvent(this);" class="form-control" asp-items="ViewBag.StudentId"><option selected >@ViewBag.Student.PersonId</option></select>
     </form>
 </div>
 <br />
@@ -30,7 +30,13 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.ResultId)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.AssignmentId)
+            </th>
+            <th>
+                Assignment Type
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Grade)
@@ -38,19 +44,37 @@
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
+            <th>
+                Module Id
+            </th>
+            <th>
+                Module Name
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in results) {
         <tr>
+            <th>
+                @item.ResultId
+            </th>
             <td>
                 <a asp-controller="Assignments" asp-action="Details" asp-route-id="@item.AssignmentId"> @Html.DisplayFor(modelItem => item.AssignmentId)</a>
             </td>
+            <th>
+                @item.Assignment.AssignmentType
+            </th>
             <td>
                 @Html.DisplayFor(modelItem => item.Grade)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Assignment.ModuleId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Assignment.Module.ModuleName)
             </td>
 
             <td> 
