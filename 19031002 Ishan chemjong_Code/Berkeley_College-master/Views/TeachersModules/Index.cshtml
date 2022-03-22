@@ -16,8 +16,12 @@
 </div>
 <br />
 <div>
-    <h2>Module Details of Teacher id: <a asp-action="Details" asp-controller="Teachers" asp-route-id="@ViewBag.Teacher.PersonId">@ViewBag.Teacher.PersonId</a>  </h2>
+    <h1> Module Details of: </h1>
+    <br />
+    <h2>Teacher id: <a asp-action="Details" asp-controller="Teachers" asp-route-id="@ViewBag.Teacher.PersonId">@ViewBag.Teacher.PersonId</a>  </h2>
+     <h2>Teacher Name: @ViewBag.Teacher.Person.FirstName @ViewBag.Teacher.Person.LastName</h2>
 </div>
+<br />
 
 <script type="text/javascript">
  function OnChangeEvent(dropDownElement){

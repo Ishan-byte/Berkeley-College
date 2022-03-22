@@ -16,8 +16,13 @@
 </div>
 <br />
 <div>
-    <h2>Fee Payment Details of Student id: <a asp-action="Details" asp-controller="Students" asp-route-id="@ViewBag.Student.PersonId">@ViewBag.Student.PersonId</a>  </h2>
+    <h1>Fee Payment Details of: </h1>
+    <br />
+    <h2>Teacher Id: <a asp-action="Details" asp-controller="Students" asp-route-id="@ViewBag.Student.PersonId">@ViewBag.Student.PersonId</a> </h2>
+    <h2>Teacher Name: @ViewBag.Student.Person.FirstName  @ViewBag.Student.Person.LastName</h2>
 </div>
+<br />
+
 <script type="text/javascript">
  function OnChangeEvent(dropDownElement){
   var selectedValue = dropDownElement.options[dropDownElement.selectedIndex].value;
@@ -57,7 +62,7 @@
                 @Html.DisplayFor(modelItem => item.Year)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PaymentDate)
+                @item.PaymentDate.ToShortDateString()
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DepartmentId)
